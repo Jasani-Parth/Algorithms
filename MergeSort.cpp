@@ -61,11 +61,11 @@ int main(void)
 {
       int* arr = new int[sz] ;
 
-      srand(time(NULL)) ;
+      srand(time(NULL)) ; // every time this use diffrent seed for generating random number 
 
       for( int i = 0 ; i < sz; i++ ) 
       {
-            arr[i] = rand() % sz + 1;
+            arr[i] = rand() % sz + 1; // random number is not random!!
             cout << arr[i] << " " ;
       }
 
