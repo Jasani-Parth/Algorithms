@@ -1,2 +1,3 @@
 # Sorting
-All Sorting Algorithm
+- All Sorting Algorithm Availabel Soon....
+- You Can Find Graphical Analysis Of Each Algorithm .
