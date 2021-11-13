@@ -10,6 +10,11 @@ Output: [1,1,4,2,1,1,0,0]
 
 **/
 
+/**
+    BRUTE-FORCE : O(N^2)
+    MONOTONIC STACK : O(N)
+**/
+
 vector<int> dailyTemperatures(vector<int>& temperatures) {
         
         int n = temperatures.size() ;
