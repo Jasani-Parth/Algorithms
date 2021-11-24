@@ -1,0 +1,7 @@
+/** THIS PROBLEM WE SIMPLIFY USING RECUSRSION **/
+
+/** Solution : "https://www.youtube.com/watch?v=q6RicK1FCUs" **/
+
+/** DEFINATION WITH BASE CASE **/
+TOH(1) = 1
+TOH(N) = 2 * TOH(N-1) + 1
