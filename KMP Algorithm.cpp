@@ -78,5 +78,5 @@ int main(void)
 	
 	calh(len,p) ;
 	
-	FindIndex(t,p) ;
+	FindIndex(t,p)  ;
 }
