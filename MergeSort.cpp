@@ -29,7 +29,7 @@ void merge(int* arr , int i , int mid ,int j )
       while( one < mid+1 )
       {
             a[index++] = arr[one++] ;
-      }
+      } 
 
       while( two <= j )
       {
