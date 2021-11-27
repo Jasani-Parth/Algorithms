@@ -12,7 +12,7 @@ int partitionzero(double* arr , int start , int end )
 
       while(true)
       {
-            while(arr[up]<=pivot) up++ ;
+            while(arr[up]<=pivot) up++ ; 
             while(arr[down]>pivot) down-- ;
 
             if(up<=down)
