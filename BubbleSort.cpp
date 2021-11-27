@@ -50,7 +50,7 @@ int main(void)
             std::cout << arr[i] << " ";
       }
       
-      std::cout << "Swap : " << number_of_swap << std::endl; 
+      std::cout << "Swap : " << number_of_swap << std::endl ; 
 
       delete(arr) ;
       return 0;
