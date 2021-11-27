@@ -54,6 +54,6 @@ int main(void)
                         high = mid-1 ;
                   }
             }
-      }
+      } 
       return 0 ;
 } 
