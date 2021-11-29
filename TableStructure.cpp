@@ -39,7 +39,7 @@ int main(int argc , char *argv[])
     for ( int i = 0 ;  i <= term ; i++ )
     {
         int x = fib ( i ) ;
-        
+         
         data.insert({i,x}) ;
         
         vec.push_back(x) ;
