@@ -35,7 +35,11 @@ public:
         ListNode* second = head ;
         ListNode* third = head ;
         
-        if(head->next == nullptr) return nullptr ;
+        if(head->next == nullptr) 
+        {
+            delete head ;
+            return nullptr ;
+        }
         
         while( first != nullptr && first->next != nullptr   )
         {
@@ -45,6 +49,7 @@ public:
         }
         
         third->next = second->next ;
+        delete second ;
         
         return head ;
     }
