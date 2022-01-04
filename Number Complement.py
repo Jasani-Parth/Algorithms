@@ -14,6 +14,9 @@ Explanation: The binary representation of 5 is 101 (no leading zero bits), and i
 class Solution:
     def findComplement(self, num: int) -> int:
         
+        if num == 0 :
+            return 1
+        
         binary = str()
         
         while num > 0 :
