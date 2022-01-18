@@ -47,5 +47,5 @@ int main(void)
     int n = 10;
     int arr[] = {1, 2, 3, 4, 9, 6, 7, 8, 10};
     std::cout << FindMissing(n, arr) << std::endl;
-    return 0;
+    return 0; 
 }
