@@ -16,6 +16,8 @@ Output: false
 
 **/
 
+/****** CODE 1 (90% Faster)******/ 
+
 class Solution {
 public:
     bool canPlaceFlowers(vector<int>& flowerbed, int n) {
@@ -30,7 +32,7 @@ public:
         {
             if ( i == 0 )
             {
-                if ( n>0 && flowerbed[i] == 0 && len>=2 && flowerbed[i+1] == 0)
+                if ( n>0 && flowerbed[i] == 0 && flowerbed[i+1] == 0)
                 {
                     n-- ;
                     flowerbed[i] = 1 ;
@@ -58,4 +60,38 @@ public:
     }
 };
 
-/**I Can Optimise This Code More!!**/
+/****** CODE 2 (21% Faster) ******/ 
+
+class Solution {
+public:
+    bool canPlaceFlowers(vector<int>& flowerbed, int n) {
+        
+        int len = flowerbed.size() ;
+        
+        if( len < n || len == 0 ) return false ;
+        if( len == 1 && n==1 && flowerbed[0] == 0) return !flowerbed[0] ;
+        
+        
+        for( int i = 0 ; i < len ; i++ )
+        {
+            if ( i == 0 || i == len-1)
+            {
+                if ( n>0 && flowerbed[i] == 0 && ( i==0 ? !flowerbed[i+1] : !flowerbed[i-1] ))
+                {
+                    n-- ;
+                    flowerbed[i] = 1 ;
+                }
+            }
+            else
+            {
+                if( n >0 && flowerbed[i] == 0 && flowerbed[i-1] == 0 && flowerbed[i+1] == 0 )
+                {
+                    n-- ;
+                    flowerbed[i] = 1 ;
+                }
+            }
+        }
+        
+        return n==0 ;
+    }
+};
