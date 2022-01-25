@@ -19,8 +19,6 @@ class Solution:
     
     def topKFrequent(self, words: List[str], k: int) -> List[str]:
         
-        import functools
-        
         data = dict()
         
         for word in words :
