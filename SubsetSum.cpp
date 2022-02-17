@@ -3,18 +3,6 @@
 #include <vector>
 using namespace std;
 
-int CountSubset(std::vector<std::vector<int>> arr, int target)
-{
-    int count = 0;
-
-    for (int row = 0; row < arr.size(); row++)
-    {
-        count += arr[row][target];
-    }
-
-    return count;
-}
-
 std::vector<std::vector<int>> SubsetSum(int N, int B)
 {
     std::vector<std::vector<int>> arr;
@@ -68,8 +56,6 @@ int main(void)
         std::cout << "Subset Is Present\n";
     else
         std::cout << "Subset Is Not Present\n ";
-
-    std::cout << CountSubset(arr, 5);
 
     return 0;
 }
